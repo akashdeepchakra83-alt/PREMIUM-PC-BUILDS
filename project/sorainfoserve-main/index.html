@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORAINFOSERVE - Premium PC Builds</title>
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Critical CSS inline (minimal styles for above-the-fold content) -->
+    <style>
+        /* Critical path CSS */
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .navbar { position: fixed; top: 0; width: 100%; z-index: 1000; }
+    </style>
+    
+    <!-- Non-critical CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-desktop"></i>
+                <span>SORAINFOSERVE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">Premium PC Builds</h1>
+            <h2 class="hero-subtitle">Crafted for Excellence</h2>
+            <p class="hero-description">Your trusted PC & laptop partner. We specialize in high-quality, pre-built systems designed for professionals, creators, and enthusiasts.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('products')">
+                    <i class="fas fa-arrow-down"></i>
+                    View Our Builds
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">
+                    <i class="fas fa-phone"></i>
+                    Get in Touch
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider"></div>
+
+    <!-- Featured Products -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title reveal reveal-up">Signature PC Builds</h2>
+            <p class="section-subtitle reveal reveal-up">Expertly curated systems designed for specific purposes. Each build represents the perfect balance of performance, reliability, and value.</p>
+            
+            <div class="products-grid">
+                <!-- Gaming Beast -->
+                <div class="product-card reveal reveal-left">
+                    <div class="product-image">
+                        <img src="pc1.jpg" alt="Gaming Beast - High-performance gaming PC" id="gaming-beast-img" loading="lazy">
+                        <div class="product-badge">RTX 3050</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gaming Beast</h3>
+                        <p>A powerful build featuring Intel i5-14400F, RTX 3050, and fast 16GB RAM. Perfect for gaming, streaming, and productivity with vibrant visuals on a 27-inch 100Hz LG monitor.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-microchip"></i> Intel Core i5-14400F</span>
+                            <span><i class="fas fa-memory"></i> Corsair 16GB 6000MHz</span>
+                            <span><i class="fas fa-hdd"></i> Crucial P1 1TB</span>
+                            <span><i class="fas fa-desktop"></i> MSI RTX 3050</span>
+                            <span><i class="fas fa-tv"></i> LG 27" 100Hz Pure Colour</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹59,999</span>
+                            <span class="original-price">₹69,999</span>
+                            <span class="savings">Save ₹10,000</span>
+                        </div>
+                        <button class="btn-view-details" onclick="showProductDetails('gaming-beast')">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Creator Pro -->
+                <div class="product-card reveal reveal-up">
+                    <div class="product-image">
+                        <img src="pc2.jpg" alt="Creator Pro - Workstation for creators and gamers" id="creators-rig-img" loading="lazy">
+                        <div class="product-badge">RTX 3060</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Creator Pro</h3>
+                        <p>A versatile build featuring Intel i5-12400F, RTX 3060, and fast 16GB RAM. Ideal for content creation, gaming, and smooth multitasking with a 27-inch 144Hz LG IPS monitor.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-microchip"></i> Intel Core i5-12400F</span>
+                            <span><i class="fas fa-memory"></i> Adata XPG D50 16GB (8x2GB)</span>
+                            <span><i class="fas fa-hdd"></i> WD Blue SN550 1TB</span>
+                            <span><i class="fas fa-desktop"></i> RTX 3060 Zotac AMP</span>
+                            <span><i class="fas fa-tv"></i> LG 27" 144Hz IPS</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹69,999</span>
+                            <span class="original-price">₹79,999</span>
+                            <span class="savings">Save ₹10,000</span>
+                        </div>
+                        <button class="btn-view-details" onclick="showProductDetails('creators-rig')">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Ultimate Workstation -->
+                <div class="product-card reveal reveal-up">
+                    <div class="product-image">
+                        <img src="pc3.jpg" alt="Ultimate Workstation - Premium productivity and creative PC" id="office-pro-img" loading="lazy">
+                        <div class="product-badge">RTX 5060</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ultimate Workstation</h3>
+                        <p>High-performance workstation featuring Ryzen 5 9600X, Zotac RTX 5060, and 32GB Crucial Pro 6000MHz RAM. Built on Asus Ayw B660m. Ideal for demanding office, creative, and multitasking workloads.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-microchip"></i> Ryzen 5 9600X</span>
+                            <span><i class="fas fa-memory"></i> Crucial Pro 6000MHz 32GB (16x2)</span>
+                            <span><i class="fas fa-hdd"></i> Crucial P1 1TB</span>
+                            <span><i class="fas fa-desktop"></i> Zotac RTX 5060</span>
+                            
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹89,999</span>
+                            <span class="original-price">₹99,999</span>
+                            <span class="savings">Save ₹10,000</span>
+                        </div>
+                        <button class="btn-view-details" onclick="showProductDetails('office-pro')">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Value Builder -->
+                <div class="product-card reveal reveal-right">
+                    <div class="product-image">
+                        <img src="pc4.jpg" alt="Value Builder - Affordable entry-level PC" id="budget-builder-img" loading="lazy">
+                        <div class="product-badge">RTX 4060</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Value Builder</h3>
+                        <p>Modern entry-level system featuring Ryzen 5 7600X, Gigabyte B650M DSH, and Crucial 16GB DDR5 6000MHz RAM. Perfect for gaming, creative, and everyday tasks.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-microchip"></i> Ryzen 5 7600X</span>
+                            <span><i class="fas fa-memory"></i> Crucial 16GB DDR5 6000MHz</span>
+                            <span><i class="fas fa-hdd"></i> WD SN770 1TB</span>
+                            <span><i class="fas fa-desktop"></i> Gigabyte Eagle OC RTX 4060 Triple Fan</span>
+                            <span><i class="fas fa-motherboard"></i> Gigabyte B650M DSH</span>
+                           
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹79,999</span>
+                            <span class="original-price">₹89,999</span>
+                            <span class="savings">Save ₹10,000</span>
+                        </div>
+                        <button class="btn-view-details" onclick="showProductDetails('budget-builder')">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider"></div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text reveal reveal-left">
+                    <h2>Your Trusted PC & Laptop Partner</h2>
+                    <p>At SORAINFOSERVE, we specialize in crafting premium pre-built PC systems that deliver exceptional performance and reliability. Our curated selection focuses on quality over quantity, ensuring every system meets our rigorous standards.</p>
+                    
+                    <p>Whether you're a professional content creator, dedicated gamer, or business user, we have the perfect system to meet your specific needs. Our guided approach eliminates the guesswork and ensures you get exactly what you need.</p>
+
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Premium Quality</h4>
+                            <p>Only the highest quality components make it into our builds</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <h4>Expert Support</h4>
+                            <p>Direct communication with our PC specialists</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-tools"></i>
+                            <h4>Custom Builds</h4>
+                            <p>Tailored systems for your specific requirements</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4>Fast Delivery</h4>
+                            <p>Quick turnaround on all pre-built systems</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal reveal-right">
+                    <img src="SOHOM LOGO.jpg" alt="PC Building">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title reveal reveal-up">What Our Customers Say</h2>
+            <p class="section-subtitle reveal reveal-up">Real feedback from happy SORAINFOSERVE clients</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal reveal-left">
+                    <div class="testimonial-quote">"Absolutely the best PC build experience I've ever had. Fast delivery and amazing support!"</div>
+                    <div class="testimonial-user">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Rahul S.</div>
+                            <div class="testimonial-role">Gamer & Streamer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-up">
+                    <div class="testimonial-quote">"My workstation is a beast! SORAINFOSERVE guided me to the perfect setup for my editing needs."</div>
+                    <div class="testimonial-user">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Priya M.</div>
+                            <div class="testimonial-role">Content Creator</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-right">
+                    <div class="testimonial-quote">"Great value and top-notch service. My office PCs run flawlessly!"</div>
+                    <div class="testimonial-user">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="User" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Amit D.</div>
+                            <div class="testimonial-role">Business Owner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Ready to build your perfect PC? Have questions about our systems? We're here to help you find the right solution.</p>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <p>Click the button below to open our secure contact form in a new tab. We’ll get back to you as soon as possible!</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdo3OHknq1K5TxSKxGlgqutE_gRa8CGYCLj0r38qW4Nh1RJlg/viewform" target="_blank" rel="noopener" class="btn-primary" style="display:inline-block;margin-top:1rem;">Open Contact Form</a>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>sorainfoserve@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 90737 52460</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon-Fri: 9AM-6PM IST<br>Sat-Sun: 10AM-4PM IST</p>
+                        </div>
+                    </div>
+
+                    <div class="why-choose">
+                        <h4>Why Choose SORAINFOSERVE?</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Premium components only</li>
+                            <li><i class="fas fa-check"></i> Expert system optimization</li>
+                            <li><i class="fas fa-check"></i> Comprehensive warranty</li>
+                            <li><i class="fas fa-check"></i> Direct customer support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-desktop"></i>
+                        <span>SORAINFOSERVE</span>
+                    </div>
+                    <p>Your trusted partner for premium PC builds and exceptional customer service.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/17Jv6zZHQh/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sora_infoserve?igsh=MTRqNzZoenBpc2o5eA==" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#" onclick="showProductDetails('gaming-beast')">Gaming Beast</a></li>
+                        <li><a href="#" onclick="showProductDetails('creators-rig')">Creator Pro</a></li>
+                        <li><a href="#" onclick="showProductDetails('office-pro')">Ultimate Workstation</a></li>
+                        <li><a href="#" onclick="showProductDetails('budget-builder')">Value Builder</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SORAINFOSERVE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919073752460" target="_blank" title="Chat with us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
